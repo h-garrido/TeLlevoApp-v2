@@ -14,11 +14,7 @@ export class SignUpPage implements OnInit {
     uid: new FormControl(''),
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
-    name: new FormControl('', [Validators.required, Validators.minLength(4)]),
-    lastname: new FormControl('', [Validators.required, Validators.minLength(4)]),
-    age: new FormControl('', [Validators.required]),
-    phone: new FormControl('', [Validators.required, Validators.minLength(9)]),
-    address: new FormControl('', [Validators.required, Validators.minLength(4)]),
+    name: new FormControl('', [Validators.required, Validators.minLength(4)])
 
   });
 

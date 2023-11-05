@@ -5,12 +5,13 @@ import { CustomInputComponent } from './components/custom-input/custom-input.com
 import { LogoComponent } from './components/logo/logo.component';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddUpdateTripComponent } from './components/add-update-trip/add-update-trip.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, CustomInputComponent, LogoComponent],
-  exports: [HeaderComponent, CustomInputComponent, LogoComponent, ReactiveFormsModule],
+  declarations: [HeaderComponent, CustomInputComponent, LogoComponent, AddUpdateTripComponent],
+  exports: [HeaderComponent, CustomInputComponent, LogoComponent, ReactiveFormsModule, AddUpdateTripComponent],
   imports: [
     CommonModule, IonicModule, ReactiveFormsModule, FormsModule
   ]
